@@ -6,7 +6,7 @@ export default async function handler(req, res) {
   if (req.method !== "POST") return res.status(405).json({ message: "Méthode non autorisée" });
   const { contentJSON } = req.body;
   const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
-  const GITHUB_USER = "Valentin-roma";
+  const GITHUB_USER = "Axitest94100";
   const GITHUB_REPO = "inventaire-machines"; 
   const FILE_PATH = "data/machines.json";
 
