@@ -40,7 +40,6 @@ export default async function handler(req, res) {
 
     const result = await updateResponse.json();
     console.log("✅ Résultat GitHub :", result);
-
     if (!updateResponse.ok) {
       return res.status(updateResponse.status).json({ error: result });
     }
